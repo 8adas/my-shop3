@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sklep</title>
+  <style>
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 10px;
+      display: flex; justify-content: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      max-width: 480px;
+      width: 100%;
+    }
+    .product {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      aspect-ratio: 1 / 1; /* kwadrat */
+    }
+    .product img {
+      max-width: 100%;
+      max-height: 50%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h2 {
+      font-size: 1rem;
+      margin: 10px 0 5px;
+    }
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #00ff99;
+    }
+    button {
+      background: transparent;
+      border: 1px solid #00ff99;
+      color: #00ff99;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #00ff99;
+      color: #121212;
+    }
+  </style>
+</head>
+<body>
+  <ul class="products">
+    <li class="product">
+      <img src="images/koszulka.jpg" alt="Koszulka">
+      <h2>Koszulka</h2>
+      <p class="price">49,99 PLN</p>
+      <button>Dodaj</button>
+    </li>
+    <li class="product">
+      <img src="images/spodnie.jpg" alt="Spodnie">
+      <h2>Spodnie</h2>
+      <p class="price">89,99 PLN</p>
+      <button>Dodaj</button>
+    </li>
+    <li class="product">
+      <img src="images/czapka.jpg" alt="Czapka">
+      <h2>Czapka</h2>
+      <p class="price">29,99 PLN</p>
+      <button>Dodaj</button>
+    </li>
+  </ul>
+</body>
+</html>
+
